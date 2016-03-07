@@ -2,7 +2,7 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"subflows":["7e4948594fc2120023d3fe618110c74a","3658c0594fc2120023d3fe618110c780"],"stages":{},"activities":{},"ends":["4a8d0c994fc2120023d3fe618110c720"]}</activity_stages>
+        <activity_stages>{"subflows":["7e4948594fc2120023d3fe618110c74a","7e4948594fc2120023d3fe618110c74a","3658c0594fc2120023d3fe618110c780"],"stages":{},"activities":{},"ends":["4a8d0c994fc2120023d3fe618110c720"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -32,9 +32,9 @@
         <sys_created_by>jj</sys_created_by>
         <sys_created_on>2016-03-07 21:57:28</sys_created_on>
         <sys_id>bd7d0c994fc2120023d3fe618110c7f9</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>jj</sys_updated_by>
-        <sys_updated_on>2016-03-07 21:58:18</sys_updated_on>
+        <sys_updated_on>2016-03-07 22:08:49</sys_updated_on>
         <table>x_snc_app_mar7_table</table>
         <timezone/>
         <validated>false</validated>
@@ -554,6 +554,69 @@ answer = 0;</value>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>JJ_wf_mar7</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>jj</sys_created_by>
+        <sys_created_on>2016-03-07 22:08:49</sys_created_on>
+        <sys_id>442094d94fc2120023d3fe618110c721</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jj</sys_updated_by>
+        <sys_updated_on>2016-03-07 22:08:49</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="app_mar7_wf2">bd7d0c994fc2120023d3fe618110c7f9</workflow_version>
+        <x>0</x>
+        <y>0</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>442094d94fc2120023d3fe618110c721</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jj</sys_created_by>
+        <sys_created_on>2016-03-07 22:08:49</sys_created_on>
+        <sys_id>842094d94fc2120023d3fe618110c721</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jj</sys_updated_by>
+        <sys_updated_on>2016-03-07 22:08:49</sys_updated_on>
+        <value>9710d4d94fc2120023d3fe618110c74c</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="JJ_wf_mar7">442094d94fc2120023d3fe618110c721</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>jj</sys_created_by>
+        <sys_created_on>2016-03-07 22:08:49</sys_created_on>
+        <sys_id>082094d94fc2120023d3fe618110c721</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jj</sys_updated_by>
+        <sys_updated_on>2016-03-07 22:08:49</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
         <databus_lookup_id>4</databus_lookup_id>
         <height/>
         <input/>
@@ -698,6 +761,19 @@ answer = 0;</value>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>jj</sys_updated_by>
         <sys_updated_on>2016-03-07 21:57:48</sys_updated_on>
+        <workflow display_value="JJ_wf_mar7">7e4948594fc2120023d3fe618110c74a</workflow>
+        <workflow_version display_value="app_mar7_wf2">bd7d0c994fc2120023d3fe618110c7f9</workflow_version>
+    </wf_workflow_instance>
+    <wf_workflow_instance action="INSERT_OR_UPDATE">
+        <activity display_value="JJ_wf_mar7">442094d94fc2120023d3fe618110c721</activity>
+        <return_map/>
+        <stage/>
+        <sys_created_by>jj</sys_created_by>
+        <sys_created_on>2016-03-07 22:08:49</sys_created_on>
+        <sys_id>9710d4d94fc2120023d3fe618110c74c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jj</sys_updated_by>
+        <sys_updated_on>2016-03-07 22:08:49</sys_updated_on>
         <workflow display_value="JJ_wf_mar7">7e4948594fc2120023d3fe618110c74a</workflow>
         <workflow_version display_value="app_mar7_wf2">bd7d0c994fc2120023d3fe618110c7f9</workflow_version>
     </wf_workflow_instance>
